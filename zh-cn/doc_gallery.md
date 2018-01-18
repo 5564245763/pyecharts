@@ -1,5 +1,3 @@
-> 画廊篇
-
 用极坐标系画出一个爱心
 ```python
 import math

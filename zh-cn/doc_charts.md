@@ -429,6 +429,7 @@
 
 # 图表详细  
 
+
 ## Bar（柱状图/条形图）
 > 柱状/条形图，通过柱形的高度/条形的宽度来表现数据的大小。
 
@@ -897,7 +898,7 @@ add(name, attr, value,
 * value -> list   
     属性所对应的值
 * type -> str  
-    图例类型，有'scatter', 'effectscatter', 'heatmap'可选。默认为 'scatter'
+    图例类型，有'scatter', 'effectScatter', 'heatmap'可选。默认为 'scatter'
 * maptype -> str  
     地图类型。 支持 china、world、安徽、澳门、北京、重庆、福建、福建、甘肃、广东，广西、广州、海南、河北、黑龙江、河南、湖北、湖南、江苏、江西、吉林、辽宁、内蒙古、宁夏、青海、山东、上海、陕西、山西、四川、台湾、天津、香港、新疆、西藏、云南、浙江，以及 [363个二线城市地图](https://github.com/chfw/echarts-china-cities-js#featuring-citiesor-for-single-download)。提醒：在画市级地图的时候，城市名字后面的‘市’要省去了，比如，石家庄市的‘市’不要提，即‘石家庄’就可以了。
 * symbol_size -> int  
@@ -1282,7 +1283,7 @@ graph.render()
 **Note：** 可配置 **lineStyle** 参数
 
 
-# HeatMap（热力图）
+## HeatMap（热力图）
 > 热力图主要通过颜色去表现数值的大小，必须要配合 visualMap 组件使用。直角坐标系上必须要使用两个类目轴。
 
 HeatMap.add() 方法签名
@@ -1365,6 +1366,7 @@ add(name, x_axis, y_axis, **kwargs)
 * y_axis -> [list], 包含列表的列表   
     y 坐标轴数据。数据中，每一行是一个『数据项』，每一列属于一个『维度』。
     数据项具体为 [open, close, lowest, highest] （即：[开盘值, 收盘值, 最低值, 最高值]）
+
 ```python
 from pyecharts import Kline
 
@@ -3584,4 +3586,4 @@ pie.add("", ["惊悚", ""], [11, 89], center=[70, 30], **pie_style)
 
 * 欢迎提交 ISSUE 和 PR
 * 如有想单独讨论的话可以使用邮箱 -> chenjiandongx@qq.com
-* 关注 [changelog.md](https://github.com/chenjiandongx/pyecharts/blob/master/changelog.md)
+* 关注 [changelog.md](https://github.com/pyecharts/pyecharts/blob/master/changelog.md)
